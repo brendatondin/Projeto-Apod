@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 50px;
+    background: #078080;
+    border-bottom: black solid 1px;
+    /* top: 0;
+    left: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logoImagem {
+    width: 80px;
+    height: 50px;
+    margin-right: 0.2em;
+}
+
+.containerLogo:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.containerLogo {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.logo-texto {
+    margin-left: 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 5px;
+}
+
+.menu li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.menu li a:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: #f45d48;
+}
+
+/* CALENDARIO */
+
+.divCalendario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+.img {
+    height: 30%;
+}
