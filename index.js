@@ -1,4 +1,20 @@
-//Sua aplicação deve ser capaz de receber uma data como entrada do usuário a partir de um formulário.
+window.onload = function () {
+    let today = new Date();
+    let date =
+        today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+
+    $.ajax({
+        url: `https://api.nasa.gov/planetary/apod?api_key=PRIPdf4uEkAsOtpLagfHRybODnTK8QvwcRsNRegh&date=${date}`,
+        success: function (data) {
+            exibir(data);
+        },
+        error: function (request, error) {
+            alert(request.responseText);
+        },
+    });
+};
+
+
 $('#submit').click(function () {
     requisicao()
 })
@@ -12,9 +28,6 @@ function requisicao() {
         }
     })
 }
-
-//Com a data selecionada, ao clicar no botão de envio, uma requisição deve ser enviada à 
-//[API da APOD](https://api.nasa.gov/planetary/apod ) para que seja obtida a foto ou vídeo referente ao dia escolhido.
 
 function exibir(resultado) {
     const titulo = $('#titulo')
@@ -31,5 +44,3 @@ function exibir(resultado) {
     }
 
 }
-
-//De posse dessa informação, a página deve ser manipulada para que os dados retornados sejam devidamente exibidos.
