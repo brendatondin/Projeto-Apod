@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+
     <title>Projeto Apod</title>
 </head>
 <body>
     <header>
         <div class="containerLogo">
                 <img class="logoImagem" id="logoImagem" src="./img/nasa_logo_1-removebg-preview.png" alt="logo da nasa">
-            <h1>APOD</h1>
         </div>
 
         <div class="menu" id="menu">
@@ -22,19 +22,19 @@
             </ul>
         </div>
     </header>
-    <p class="texto" id="texto">Descubra mais sobre o espaço:</p>
-    <div class="divCalendario" id="divCalendario">
-        <input type="date" min="1995-06-20" name="data" id="data">
-        <button id="submit" value="Pesquisar">Pesquisar</button>
-    </div>
-
-    <div class="conteudo" id="conteudo">
-        <h2 id="titulo"></h2>
-        <p id="imagem"></p>
-        <p id="textoApi"></p>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./index.js"></script>
+        <h1 class="texto" id="texto">Descubra mais sobre o espaço:</h1>
+        
+        <div class="divCalendario" id="divCalendario">
+            <input type="date" min="1995-06-20" name="data" id="data">
+            <button id="submit" value="Pesquisar">Pesquisar</button>
+        </div>
+        
+        <div class="conteudo" id="conteudo">
+            <h2 id="titulo"></h2>
+            <p id="imagem"></p>
+            <p id="textoApi"></p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./index.js"></script>
 </body>
 </html>
