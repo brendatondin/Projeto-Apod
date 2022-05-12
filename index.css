@@ -14,8 +14,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 0em;
     /* padding: 20px 50px; */
-    padding: 10px;
+    /* padding: 10px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -25,11 +26,6 @@ header {
     margin-right: 0.2em;
     margin-left: 3em;
 }
-
-/* .containerLogo:hover {
-    color: black;
-    transform: scale(1.1);
-} */
 
 .containerLogo {
     display: flex;
@@ -56,14 +52,12 @@ header {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    /* padding: 10px 15px; */
     padding: 5px;
     border-radius: 6px;
 }
 
 .menu li a:hover {
-    background-color: rgba(100, 100, 100, 0.5);
-    color: #f45d48;
+    background-image: linear-gradient(to right,  #F28963, #F25D50);
 }
 
 /* CALENDARIO */
@@ -79,7 +73,7 @@ header {
 }
 
 .texto {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
     font-size: 30px;
     text-align: center;
     margin-top: 50px;
@@ -129,11 +123,11 @@ footer{
     align-items: center;
     text-align: center;
     position: relative;
-    bottom: 0em;
     width: 100%;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    background: rgba(100, 100, 100, 0.5);
+    background: rgba(226, 220, 220, 0.5);
+    gap: 0.5em;
 }
 
 .link {
