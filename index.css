@@ -121,3 +121,21 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 0em;
+    width: 100%;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background: rgba(100, 100, 100, 0.5);
+}
+
+.link {
+    width: 1.5em;
+}
